@@ -1,0 +1,59 @@
+extends layout
+
+block content
+	span(class="container-voltar-home")
+		a(class="voltar-home" href="/")
+			span &nbsp;
+		label.lbl-fechar Fechar
+
+	section(id="job") 
+		article
+			header
+				h1 Sabin Vacinas
+				div.container-img
+					figure
+						img(src="/images/temp/bike_post_1.jpg")
+						img(src="/images/temp/bike_post_2.jpg")
+						img(src="/images/temp/bike_post_3.jpg")
+
+			nav(class="nav-interna bullets")
+
+			span.container-job
+				aside.left
+					small("nosso-papel") Nosso papel neste projeto:
+					ul 
+						li Design
+						li Direção de Arte
+						li Front-end
+						li Back-end
+						li Planejamento 
+					span.content-job
+						p 
+							| Mussum ipsum cacilds, vidis litro abertis. Cénsôtis adipiscings elitis. Pra lá , 
+							| depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum 
+							| girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma 
+							| pindureta quium dia nois paga.
+						p 
+							blockquote 
+								| Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi.
+						p 
+							| Mussum ipsum cacilds, vidis litro abertis. Cénsôtis adipiscings elitis. Pra lá , 
+							| depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum 
+							| girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma 
+							| pindureta quium dia nois paga.
+
+				aside.right
+					span.item
+						h4 Cliente:
+						span Concreto Brasil
+					span.item
+						h4 Trabalho:
+						span Cachaça 51 Internacional
+					span.item
+						h4 Veja online:
+						span.list-links
+							a(href="#") cachaca51official
+							a(href="#") www.cachaca51.com
+							a(href="#") www.cachaca51.com/drinks
+							a(href="#") www.cachaca51.com/blog
+	include footer

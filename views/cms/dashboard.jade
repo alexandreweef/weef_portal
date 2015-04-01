@@ -1,0 +1,42 @@
+extends layout
+
+block content
+	include wrapper
+
+	section(id="page-wrapper")
+		div.container-fluid
+			div.row
+				h1.page-header Trabalhos
+					small Lista de trabalhos
+			div.row
+				div.navbar.navbar-inverse
+					div(class="navbar-collapse collapse")
+						div.navbar-header
+							a.navbar-brand Actions
+						ul(class="nav navbar-nav")
+							li.active 
+								a(href="/cms/dashboard/") 
+									i(class="fa fa-table")
+									| Mostrar todos
+							li
+								a(href="/cms/dashboard/add") 
+									i(class="fa fa-plus")
+									| Adicionar
+
+			div.row
+				div.list-group
+					a(href="#" class="list-group-item")
+						i(class="fa fa-edit")
+						| Título do paranauê vem bem aqui
+					a(href="#" class="list-group-item")
+						i(class="fa fa-edit")
+						| Título do paranauê vem bem aqui
+					a(href="#" class="list-group-item")
+						i(class="fa fa-edit")
+						| Título do paranauê vem bem aqui
+					a(href="#" class="list-group-item")
+						i(class="fa fa-edit")
+						| Título do paranauê vem bem aqui
+
+
+

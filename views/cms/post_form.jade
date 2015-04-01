@@ -1,0 +1,63 @@
+extends layout
+
+block content
+	include wrapper
+
+	section(id="page-wrapper")
+		div.container-fluid
+			div.row
+				h1.page-header Trabalhos
+					small Lista de trabalhos
+			div.row
+				div.navbar.navbar-inverse
+					div(class="navbar-collapse collapse")
+						div.navbar-header
+							a.navbar-brand Actions
+						ul(class="nav navbar-nav")
+							li 
+								a(href="/cms/dashboard/") 
+									i(class="fa fa-table")
+									| Mostrar todos
+							li.active
+								a(href="/cms/dashboard/add") 
+									i(class="fa fa-plus")
+									| Adicionar
+
+			div.row
+				form(action='/cms/dashboard/add', method='post', class="formulario", role="form", enctype = "multipart/form-data")
+					div.form-group
+						label Título
+						input(class="form-control" type="text" name="titulo")
+						p(class="help-block") Até 80 caracteres
+
+					div.form-group
+						label Detalhes dos trabalho
+						textarea(class="form-control tinymce" type="text" name="titulo" rows="10")
+						p(class="help-block") Descrição detalhada do trabalho
+
+						div(class="panel panel-default")
+							div(class="panel-heading")
+								h3( class="panel-title") Imagem principal
+
+							div(class="panel-body") 													
+								span(class="btn btn-success fileinput-button")
+									i(class="glyphicon glyphicon-plus")
+									span Escolher arquivo
+									input(type="file" ,name="files[]", multiple, value="Adicionar arquivo", class="fileupload")
+
+						div(class="panel panel-info")
+							div(class="panel-heading")
+								h3( class="panel-title") Galeria de imagens
+								
+							div(class="panel-body") 													
+								span(class="btn btn-success fileinput-button")
+									i(class="glyphicon glyphicon-plus")
+									span Escolher arquivo
+									input(type="file" ,name="files[]", multiple, value="Adicionar arquivo", class="fileupload")
+
+
+	
+				
+
+
+

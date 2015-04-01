@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	section(class="login-box alert navbar-default")
+		h1 Login/Senha
+		if error 
+			span.alert.alert-danger #{error}
+
+		form(action='/cms', method='post', class="formulario")
+			span(class="form-group")
+				label Usuário
+				input(id='email', type='text', value='', placeholder='@',name='email', class="form-control")
+			span(class="form-group")
+				label Senha
+				input(id='password', type='password',value='', placeholder='', name='password', class="form-control")
+			input(type="submit", value="Entrar", class="btn btn-primary right")

@@ -1,0 +1,69 @@
+html { height: 100%; }
+body {
+	background: #302f2e;
+	font-family: $font-1;
+	color: #333;
+	font-weight: 300;
+	height: 100%;
+	a { 
+		color: #fff; 
+		&:hover {
+			color: rgba(255,255,255,0.8);
+		}
+	}
+}
+
+
+.form-group { display: block; }
+
+h1, h2, h3, h4, h5, h6 { font-family: $font-3; }
+
+.tinymce {
+	height: 100px;
+}
+
+.right {
+	float: right;
+	&:after {
+		display: block;
+		content: '';
+		clear: left;
+		float: none
+	}
+}
+
+.clear {
+	clear: both;
+	display: block;
+}
+
+.alert { 
+	padding: 8px;
+	margin-bottom: 10px;
+	display: block;  }
+
+
+
+
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden; }
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer; }
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;  }
+}

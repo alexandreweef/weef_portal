@@ -1,0 +1,29 @@
+footer {
+	background: #1e1e1e;
+	padding: 50px 0;
+	text-align: center;
+	h3 {
+		font-size: 23px;
+		font-weight: 700;
+		font-family: $font-2;
+	}
+	p {
+		font-family: $font-1;
+		padding-top: 8px;
+	}
+	.contato {
+		display: inline-block;
+		padding: 8px 15px;
+		font-family: $font-2;
+		font-weight: 700;
+		text-transform: uppercase;
+		border: 2px solid #fff;
+		margin-top: 30px;
+		text-decoration: none;
+		color: #FFF;
+		@include transition(all 200ms ease-out);
+		&:hover {
+			@include opacity(0.8);
+		}
+	}
+}

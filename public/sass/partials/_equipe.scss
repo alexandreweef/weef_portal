@@ -1,0 +1,63 @@
+#equipe {
+	padding: 80px 0 0 0;
+	background: #009fe3;
+	text-align: center;
+	h1 {
+		font-family: $font-2;
+		font-size: 60px;
+		padding-bottom: 50px;
+	}
+	p {
+		font-family: $font-4;
+		font-style: italic;
+		padding-bottom: 20px;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 200;
+		strong,b {
+			font-weight: 700;
+		}
+	}
+
+	.colaboradores {
+		background: #fff;
+		color: #000000;
+		margin-top: 80px;
+		ul { 
+			padding: 60px 0;
+			li {
+				width: 170px;
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 80px;
+				&:last-child { margin-right: 0; }
+				figure {
+					width: 170px;
+					height: 170px;
+					overflow: hidden;
+					margin-bottom: 20px;
+					@include border-radius(170px);
+					img { display: block; }
+				}
+				.topo {
+					h4 {
+						font-family: $font-1;
+						font-weight: 800; }
+
+					label {
+						font-family: $font-4;
+						font-style: italic;
+						font-weight: 700;
+						display: block ;
+						padding: 15px 0 20px 0;
+					}
+				}
+				p {
+					font-family: $font-1;
+					font-size: 16px;
+					font-style: normal;
+				}
+			}
+		}
+	}
+}

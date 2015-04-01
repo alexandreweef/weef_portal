@@ -1,0 +1,146 @@
+
+//Estrutura menu
+#menu {
+	display: block; 
+
+	h1 {
+		display: inline-block;
+		background: url(../images/title/logo.png) center center no-repeat #fff;
+		@include background-size(70px 26px);
+		width: 100px;
+		height: 55px;
+		text-indent: -9999px;
+		margin-left: 55px;
+		@include transition(all 200ms ease-out);
+
+		a {
+			width: 100px;
+			height: 55px;
+			display: block; }
+	}
+}
+.icon {
+	width: 55px;
+	background: rgba(0,0,0,1);
+	height: 55px;
+	display: inline-block; 
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: block; 
+
+	#menu-toggle {
+		cursor: pointer;
+		padding: 26px 35px 16px 15px;
+		width: 5px;
+		margin: auto;
+		display: inline-block;
+		height: 13px;
+
+		span { 
+			cursor: pointer;
+			border-radius: 1px;
+			height: 3px;
+			width: 20px;
+			background: #fff;
+			position: absolute;
+			display: inline-block;
+			content: '';
+			@include transition(all 500ms ease-in-out);
+
+			&:before { 
+				@extend span;
+				top: -7px;
+				left: 0; }
+
+			&:after {
+				@extend span;
+				bottom: -7px;
+				left: 0; }
+		}
+		&.active {
+
+			span {
+				background-color: transparent;
+
+				&:before {
+					top: 0;
+					@include transform(rotate(45deg));
+					background: #fff; }
+
+				&:after {
+					bottom: 0;
+					@include transform(rotate(-45deg));
+					background: #fff ; }
+			}
+		}
+	}
+
+
+
+}
+
+
+
+
+//Container left
+.container-menu-left {
+	position: fixed;
+	left: 0;
+	top: 0; 
+	width: 394px; 
+	height: 100%; 
+	display: table; 
+	margin-left: -240px;
+	z-index: 10;
+	@include transition(all 400ms ease-out);
+	
+	#menu-top { display: table-cell; }
+	#menu-content { 
+		display: table-cell; 
+		width: 240px;
+		vertical-align: top;
+		background: rgba(0,0,0,1);
+		color: #fff; 
+
+		.fechar {
+			font-family: $font-4;
+			font-style: italic;
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			cursor: pointer;
+			padding: 20px 0 60px 56px; 
+			&:hover { text-decoration: underline; }  
+		}
+
+		.lista-itens {			
+			li {
+				padding: 12px 20px;
+				a {
+					color: #FFF;
+					font-family: $font-3;
+					font-size: 32px;
+					display: block; 
+					text-decoration: none;
+					@include transition(all 350ms ease-out);
+					letter-spacing: 0.3px;
+					&:hover { color: #009fe3; }
+				} 
+			}
+		}
+
+	}
+	
+
+	&.active { 
+		margin-left: 0; 
+		width: 280px; 
+		#menu{
+			h1 {
+				margin-left: 0;
+			}
+		}		
+
+	} 
+}

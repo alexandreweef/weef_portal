@@ -1,0 +1,61 @@
+extends layout
+
+block content
+	span(class="container-voltar-home")
+		a(class="voltar-home" href="/")
+			span &nbsp;
+		label.lbl-fechar Fechar
+
+	section(id="equipe") 
+		article
+			h1 Equipe
+			p
+				| Somos um grupo de designers e desenvolvedores que trabalham com foco
+				| em tecnologia web e inovação.
+			p
+				| Somos flexíveis, nos adaptamos a qualquer projeto, seja ele grande ou pequeno.
+			p
+				| Entre em contato e troque uma idéia conosco :)
+		
+		section(class="colaboradores")
+			ul
+				li
+					figure
+						img(src="/images/temp/alexandre.jpg")
+					span.topo
+						h4 Alexandre Oliveira
+						label Tecnologia
+					p 
+						| Há 8 anos, trabalha em agências com foco em Tecnologia da Informação. Já atendeu Caixa Seguros, 
+						| Banco do Brasil, Cachaça 51 (internacional), CNI, Apex e Natura. Em 2010 foi coordenador de T.I. da 
+						| campanha presidencial de Dilma Rousseff.
+
+				li
+					figure
+						img(src="/images/temp/cleo.jpg")
+					span.topo
+						h4 Cléo Ichihara
+						label Diretor de Criação
+					p 
+						| Desde 2007 atua no mercado publicitário. Atendeu clientes como Cachaça 51, Metrô de São Paulo, Havanna do Brasil, 
+						| D’pil, e RTM na criação de peças e campanhas on e off-line.
+
+				li
+					figure
+						img(src="/images/temp/gustavo_moreira.jpg")
+					span.topo
+						h4 Gustavo Moreira
+						label Designer
+					p 
+						| Designer / Diretor de arte desde 2008, é especialista em Branding e estratégia de marca.
+
+				li
+					figure
+						img(src="/images/temp/gustavo_pereira.jpg")
+					span.topo
+						h4 Gustavo Pereira
+						label Desenvolvedor
+					p 
+						| Atua desde 2008 como desenvolvedor. Especialista em Back-end.
+		
+	include footer
